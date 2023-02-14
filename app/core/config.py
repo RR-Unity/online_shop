@@ -7,7 +7,6 @@ DATABASE_FILE = 'database_version'
 
 class Config(BaseModel):
     db_url: str
-    db_url_test: str
 
     def_items_on_page: int
 
@@ -27,7 +26,6 @@ class Config(BaseModel):
 
         return Config(
             db_url=data_env['DB_URL'],
-            db_url_test=data_env['DB_URL_TEST'],
 
             def_items_on_page=data_env['DEF_ITEMS_ON_PAGE'],
 
